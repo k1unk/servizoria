@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="questions-block">
+    <div class="title">
+        Мобильным приложением Онлайн легко пользоваться
+    </div>
+    <div class="subtitle">(где 1 - абсолютно не согласен, а 10 - абсолютно согласен)</div>
+
+    <div class="slider">
+        <input type="range" min="0" max="10" value="0" id="slider">
+        <div class="wrap">
+            <div id="slider-value">
+                0
+            </div>
+        </div>
+
+    </div>
+    <div class="bad-answer-block" id="bad-answer-block">
+        <div class="bad-answer-block__title" id="bad-answer-block__title">Уточните, какой именно функционал требует
+            улучшений в интернет-банке?
+        </div>
+        <div class="bad-answer-block__subtitle">(возможно несколько вариантов)</div>
+        <div class="options">
+            <div class="option">
+                <div class="main">
+                    <input type="checkbox" id="option-1" onchange='handleChange(this)'>
+                    <label for="option-1">Информация по вашим продуктам (счета, карты, вклады, кредиты и т.д.)</label>
+                </div>
+                <div class="extra" id="extra-1">
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                </div>
+            </div>
+            <div class="option">
+                <div class="main">
+                    <input type="checkbox" id="option-2" onchange='handleChange(this)'>
+                    <label for="option-2">Оплата услуг (ЖКХ, мобильная связь, интернет и т.д.)</label>
+                </div>
+                <div class="extra" id="extra-2">
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                </div>
+            </div>
+            <div class="option">
+                <div class="main">
+                    <input type="checkbox" id="option-3" onchange='handleChange(this)'>
+                    <label for="option-3">Переводы</label>
+                </div>
+                <div class="extra" id="extra-3">
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                </div>
+            </div>
+            <div class="option">
+                <div class="main">
+                    <input type="checkbox" id="option-4" onchange='handleChange(this)'>
+                    <label for="option-4">Другое</label>
+                </div>
+                <div class="extra" id="extra-4">
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                    <div class="extra__item">Текущие счета</div>
+                    <div class="extra__item">Дебетовые карты</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button" id="button">Далее</div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
+
